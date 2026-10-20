@@ -1,5 +1,6 @@
 import { portfolioData } from "@/data/portfolio-data";
 import Link from "next/link";
+import NavLink from "@/components/NavLink";
 
 export default function Home() {
   const { personal, socialLinks, experiences, education, skills } =
@@ -115,19 +116,16 @@ export default function Home() {
       <main className="relative z-10 flex-1 px-8 py-10 sm:px-12 sm:py-14 lg:px-20 lg:py-16 max-w-5xl">
         {/* Top bar / Resume */}
         <div className="flex justify-end mb-10 sm:mb-14">
-          <Link href={"#Skills"}>Test</Link>
-          <a
-            href={personal.resumeUrl}
-            className="group flex items-center gap-2 text-sm font-medium text-purple-200/90 hover:text-white transition-colors"
-          >
-            <span className="w-2 h-2 rounded-full bg-[#ff3d94] shadow-[0_0_8px_#ff3d94]" />
-            <span>Resume</span>
-          </a>
+          <NavLink href={"#Work"}>Work</NavLink>
+          <NavLink href={"#Education"}>Education</NavLink>
+          <NavLink href={"#Skills"}>Skills</NavLink>
+          <NavLink href={"#Projects"}>Projects</NavLink>
+          <NavLink href={personal.resumeUrl} isExternal>Resume</NavLink>
         </div>
 
         <div className="space-y-14 sm:space-y-16">
           {/* Section: Work Experience */}
-          <section aria-labelledby="experience-heading">
+          <section id="Work" aria-labelledby="experience-heading">
             <div className="flex items-center gap-4 mb-8">
               <div className="w-11 h-11 rounded-xl bg-[#26104f] border border-[#ff3d94]/40 flex items-center justify-center text-[#ff3d94] shadow-sm flex-shrink-0">
                 <svg
@@ -186,7 +184,7 @@ export default function Home() {
           </section>
 
           {/* Section: Education */}
-          <section aria-labelledby="education-heading">
+          <section id="Education" aria-labelledby="education-heading">
             <div className="flex items-center gap-4 mb-8">
               <div className="w-11 h-11 rounded-xl bg-[#26104f] border border-[#ff3d94]/40 flex items-center justify-center text-[#ff3d94] shadow-sm flex-shrink-0">
                 <svg
@@ -282,7 +280,7 @@ export default function Home() {
           </section>
 
           {/* Section: Projects */}
-          <section aria-labelledby="projects-heading">
+          <section id="Projects" aria-labelledby="projects-heading">
             <div className="flex items-center justify-between group cursor-pointer pt-2">
               <div className="flex items-center gap-4">
                 <div className="w-11 h-11 rounded-xl bg-[#26104f] border border-[#ff3d94]/40 flex items-center justify-center text-[#ff3d94] shadow-sm flex-shrink-0 group-hover:border-[#ff3d94] transition-colors">
