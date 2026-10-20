@@ -62,29 +62,67 @@ export const portfolioData: PortfolioData = {
   experiences: [
     {
       id: "exp-1",
-      period: "2023 – Present",
-      role: "Backend Developer",
-      company: "Acme Digital",
+      period: "Feb. 2025 - Present",
+      role: "Computer Analyst",
+      company: "Santé Québec Saguenay–Lac-Saint-Jean - Universitaire",
       description:
-        "Develop and maintain RESTful APIs, manage databases, and contribute to scalable backend services using Node.js and TypeScript.",
+        "- Développement de nouvelles fonctionnalités pour l’environnement Atlassian (Jira, Insight, Confluence)\n" +
+          "  - Correction de bugs trouvés par les utilisateurs\n" +
+          "  - Analyse d’actifs pour la mise en place de côtes d’importances et RTO/RPO\n" +
+          "  - Gestion de billet et création de documentation via Jira Service management\n" +
+          "  - Création de documentation pour le support d’actifs dans une base de connaissance Confluence",
     },
     {
       id: "exp-2",
-      period: "2021 – 2023",
-      role: "Junior Backend Developer",
-      company: "PixelForge",
+      period: "Apr. 2023 - Jan. 2025",
+      role: "Web Developer",
+      company: "Digicom",
       description:
-        "Built features, fixed bugs, and worked with a small team to improve application performance and reliability.",
+        "- Développement de nouvelles fonctionnalités pour notre espace client et notre intranet\n" +
+          "- Correction de bugs trouvés par les utilisateurs\n" +
+          "- Gestion de base de données\n" +
+          "- Gestion/Intégration d'un nouveau membre de l'équipe\n" +
+          "- Contrôle de version du code avec Git & Gitlab",
+    },
+    {
+      id: "exp-3",
+      period: "Jan. 2021 - Apr. 2023",
+      role: "Support Technician - Level 2",
+      company: "Digicom",
+      description:
+          "- Aide à l'installation d'antennes clients (vérification de vitesse, de signal de l'antenne et interférences locales)\n" +
+          "- Gestion et Création de serveurs courriels (IMAP, SMTP, MX)\n" +
+          "- Mise en place et gestion de serveurs Linux (Ubuntu / Proxmox)\n" +
+          "- Mise en place et gestion de conteneurs Linux sur Proxmox (Web, Courriel, Base de données)\n" +
+          "- Gestion et résolution de tickets de Niveau 2 en lien avec nos équipements chez les clients, notre infrastructure ou nos serveurs\n" +
+          "- Création de carte avec QGIS"
     },
   ],
   education: [
     {
       id: "edu-1",
-      period: "2018 – 2021",
-      degree: "Computer Science Diploma",
-      school: "Cégep de Saint-Hyacinthe",
+      period: "Aug. 2023 - Dec. 2024",
+      degree: "Computer Science Bachelor Degree",
+      school: "Université du Québec à Chicoutimi",
       description:
-        "Focused on software development, databases and system architecture.",
+        "UnitedCTF 2023 - 3e place pour l’UQAC\n" +
+          "UnitedCTF 2024 - 51e global, inconnue pour l’UQAC",
+    },
+    {
+      id: "edu-2",
+      period: "Aug. 2022 - June 2023",
+      degree: "Electrical Engineering Bachelor Degree",
+      school: "Université du Québec à Chicoutimi",
+      description:
+          "Did not finish, transferred to Computer science",
+    },
+    {
+      id: "edu-3",
+      period: "2019 - June 2022",
+      degree: "Computer Science Diploma",
+      school: "Collège d'Alma",
+      description:
+          "",
     },
   ],
   skills: [
