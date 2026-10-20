@@ -41,9 +41,11 @@ export default function Home() {
           </div>
 
           {/* Bio */}
-          <p className="text-purple-100/85 text-sm sm:text-base leading-relaxed max-w-sm">
-            {personal.bio}
-          </p>
+          {personal.bio.map((biopart, index) => (
+            <p key={index} className="text-purple-100/85 text-sm sm:text-base leading-relaxed max-w-sm">
+              {biopart}
+            </p>
+          ))}
 
           {/* Separator pill */}
           <div className="w-12 h-1 bg-[#ff3d94] rounded-full" />
@@ -175,7 +177,11 @@ export default function Home() {
                       {exp.company}
                     </p>
                     <p className="text-sm text-purple-200/80 leading-relaxed pt-1 max-w-2xl">
-                      {exp.description}
+                      <ul style={{ listStyleType: "disc", paddingLeft: "20px"}}>
+                      {exp.description.map((str, index) => (
+                        <li key={index}>{str}</li>
+                      ))}
+                      </ul>
                     </p>
                   </div>
                 </div>
@@ -233,9 +239,12 @@ export default function Home() {
                     <p className="text-sm font-semibold text-[#ff3d94]">
                       {edu.school}
                     </p>
-                    <p className="text-sm text-purple-200/80 leading-relaxed pt-1 max-w-2xl">
-                      {edu.description}
-                    </p>
+                    {edu.description.map((desc, index) => (
+                        <p key={index} className="text-sm text-purple-200/80 leading-relaxed pt-1 max-w-2xl">
+                          {desc}
+                        </p>
+                    ))}
+
                   </div>
                 </div>
               ))}
@@ -303,24 +312,24 @@ export default function Home() {
                   id="projects-heading"
                   className="text-2xl sm:text-3xl font-bold tracking-tight text-white group-hover:text-purple-100 transition-colors"
                 >
-                  Projects
+                  Projects - Coming Soon
                 </h2>
               </div>
 
               {/* Right Arrow */}
-              <div className="text-[#ff3d94] p-2 group-hover:translate-x-1.5 transition-transform duration-200">
-                <svg
-                  className="w-6 h-6 stroke-current fill-none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  aria-hidden="true"
-                >
-                  <line x1="5" y1="12" x2="19" y2="12" />
-                  <polyline points="12 5 19 12 12 19" />
-                </svg>
-              </div>
+              {/*<div className="text-[#ff3d94] p-2 group-hover:translate-x-1.5 transition-transform duration-200">*/}
+              {/*  <svg*/}
+              {/*    className="w-6 h-6 stroke-current fill-none"*/}
+              {/*    viewBox="0 0 24 24"*/}
+              {/*    strokeWidth="2"*/}
+              {/*    strokeLinecap="round"*/}
+              {/*    strokeLinejoin="round"*/}
+              {/*    aria-hidden="true"*/}
+              {/*  >*/}
+              {/*    <line x1="5" y1="12" x2="19" y2="12" />*/}
+              {/*    <polyline points="12 5 19 12 12 19" />*/}
+              {/*  </svg>*/}
+              {/*</div>*/}
             </div>
           </section>
         </div>
