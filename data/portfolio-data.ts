@@ -39,7 +39,7 @@ export const portfolioData: PortfolioData = {
     firstName: "Keven",
     lastName: "Imbeault",
     role: "COMPUTER ANALYST",
-    bio: "I build reliable and scalable backend systems with a focus on clean code, performance and great developer experience.",
+    bio: "I'm a computer analyst and back-end developer based off Saguenay-Lac-Saint-Jean, QC. Always learning about AI, programming, computer networks, and cybersecurity.",
     resumeUrl: "#resume",
   },
   socialLinks: [
