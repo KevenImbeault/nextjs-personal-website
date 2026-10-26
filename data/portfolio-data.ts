@@ -126,8 +126,8 @@ export const portfolioData: PortfolioData = {
       degree: "Computer Science Bachelor Degree",
       school: "Université du Québec à Chicoutimi",
       description: [
-        "UnitedCTF 2023 - 3e place pour l’UQAC",
-        "UnitedCTF 2024 - 51e global, inconnue pour l’UQAC"
+        "UnitedCTF 2023 - 3rd place for UQAC-only ranking",
+        "UnitedCTF 2024 - 51st global ranking, unknown for UQAC-only ranking"
       ]
     },
     {
