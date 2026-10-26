@@ -1,5 +1,3 @@
-import {faGithub} from "@fortawesome/free-brands-svg-icons";
-
 export interface SkillItem {
   id: string;
   category: string;

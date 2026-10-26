@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import { useLocale } from "next-globe-gen";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import "../app/globals.css";
+
 
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
@@ -27,9 +29,11 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const locale = useLocale();
+
   return (
     <html
-      lang="en"
+      lang={locale}
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased dark`}
     >
       <body className="min-h-full bg-[#100624] text-white selection:bg-[#ff3d94] selection:text-white">

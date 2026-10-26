@@ -1,17 +1,20 @@
 import { portfolioData } from "@/data/portfolio-data";
-import Link from "next/link";
 import NavLink from "@/components/NavLink";
 import SkillsSection from "@/components/SkillsSection";
+import LanguageSwitcher from "./LanguageSwitcher";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 
 import {faGithub, faHackerrank, faLeetcode, faLinkedin} from "@fortawesome/free-brands-svg-icons";
+import {useTranslations} from "next-globe-gen";
 
 library.add(faGithub, faHackerrank, faLeetcode, faLinkedin)
 
 export default function Home() {
   const { personal, socialLinks, experiences, education, skills } =
     portfolioData;
+
+  const t = useTranslations();
 
   return (
     <div className="min-h-screen w-full bg-[#100624] text-white relative overflow-hidden flex flex-col lg:flex-row">
@@ -43,7 +46,7 @@ export default function Home() {
               </span>
             </h1>
             <p className="text-xs sm:text-sm font-semibold tracking-[0.25em] text-pink-200/90 uppercase pt-2">
-              {personal.role}
+              {t("role")}
             </p>
           </div>
 
@@ -101,12 +104,13 @@ export default function Home() {
       {/* Right Column / Content Area */}
       <main className="relative z-10 flex-1 px-8 py-10 sm:px-12 sm:py-14 lg:px-20 lg:py-16 max-w-5xl">
         {/* Top bar / Resume */}
-        <div className="flex justify-end mb-10 sm:mb-14">
+        <div className="flex items-center justify-end mb-10 sm:mb-14">
           <NavLink href={"#Work"}>Work</NavLink>
           <NavLink href={"#Education"}>Education</NavLink>
           <NavLink href={"#Skills"}>Skills</NavLink>
           <NavLink href={"#Projects"}>Projects</NavLink>
           <NavLink href={personal.resumeUrl} isExternal>Resume</NavLink>
+          <LanguageSwitcher />
         </div>
 
         <div className="space-y-14 sm:space-y-16">
