@@ -31,7 +31,7 @@ export interface PortfolioData {
   socialLinks: SocialLink[];
   experiences: ExperienceItem[];
   education: EducationItem[];
-  skills: string[];
+  skills: Record<string, string[]>; // Categorized skills dictionary
 }
 
 export const portfolioData: PortfolioData = {
@@ -138,15 +138,24 @@ export const portfolioData: PortfolioData = {
 
     },
   ],
-  skills: [
-    "Node.js",
-    "Express",
-    "TypeScript",
-    "JavaScript",
-    "PostgreSQL",
-    "Docker",
-    "Git",
-    "Linux",
-    "AWS",
-  ],
+  skills: {
+    "Programming": [
+      "TypeScript",
+      "JavaScript",
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+    ],
+    "Deployment": [
+      "Docker",
+      "Linux",
+      "AWS",
+      "Git",
+    ],
+    "Tools & Systems": [
+      "Atlassian (Jira/Confluence)",
+      "Proxmox",
+      "QGIS",
+    ],
+  },
 };

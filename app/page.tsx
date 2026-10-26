@@ -1,6 +1,7 @@
 import { portfolioData } from "@/data/portfolio-data";
 import Link from "next/link";
 import NavLink from "@/components/NavLink";
+import SkillsSection from "@/data/SkillsSection";
 
 export default function Home() {
   const { personal, socialLinks, experiences, education, skills } =
@@ -20,11 +21,11 @@ export default function Home() {
 
       {/* Left Column / Profile Sidebar */}
       <aside
-        className="relative z-10 w-full lg:w-[420px] xl:w-[460px] lg:min-h-screen flex-shrink-0 flex flex-col justify-between p-8 sm:p-12 lg:p-16 lg:sticky lg:top-0"
-        style={{
-          background:
-            "linear-gradient(155deg, rgba(181, 48, 126, 0.95) 0%, rgba(106, 42, 152, 0.92) 38%, rgba(63, 28, 109, 0.88) 72%, rgba(31, 11, 75, 0.95) 100%)",
-        }}
+          className="relative z-10 w-full lg:w-[420px] xl:w-[460px] lg:min-h-screen shrink-0 flex flex-col p-8 sm:p-12 lg:p-16 lg:sticky lg:top-0"
+          style={{
+            background:
+                "linear-gradient(155deg, rgba(181, 48, 126, 0.95) 0%, rgba(106, 42, 152, 0.92) 38%, rgba(63, 28, 109, 0.88) 72%, rgba(31, 11, 75, 0.95) 100%)",
+          }}
       >
         <div className="space-y-8 lg:space-y-12">
           {/* Name & Title */}
@@ -251,42 +252,43 @@ export default function Home() {
             </div>
           </section>
 
-          {/* Section: Skills */}
-          <section id="Skills" aria-labelledby="skills-heading">
-            <div className="flex items-center gap-4 mb-8">
-              <div className="w-11 h-11 rounded-xl bg-[#26104f] border border-[#ff3d94]/40 flex items-center justify-center text-[#ff3d94] shadow-sm flex-shrink-0">
-                <svg
-                  className="w-5 h-5 stroke-current fill-none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  aria-hidden="true"
-                >
-                  <polyline points="16 18 22 12 16 6" />
-                  <polyline points="8 6 2 12 8 18" />
-                </svg>
-              </div>
-              <h2
-                id="skills-heading"
-                className="text-2xl sm:text-3xl font-bold tracking-tight text-white"
-              >
-                Skills
-              </h2>
-            </div>
+          {/*/!* Section: Skills *!/*/}
+          {/*<section id="Skills" aria-labelledby="skills-heading">*/}
+          {/*  <div className="flex items-center gap-4 mb-8">*/}
+          {/*    <div className="w-11 h-11 rounded-xl bg-[#26104f] border border-[#ff3d94]/40 flex items-center justify-center text-[#ff3d94] shadow-sm flex-shrink-0">*/}
+          {/*      <svg*/}
+          {/*        className="w-5 h-5 stroke-current fill-none"*/}
+          {/*        viewBox="0 0 24 24"*/}
+          {/*        strokeWidth="2"*/}
+          {/*        strokeLinecap="round"*/}
+          {/*        strokeLinejoin="round"*/}
+          {/*        aria-hidden="true"*/}
+          {/*      >*/}
+          {/*        <polyline points="16 18 22 12 16 6" />*/}
+          {/*        <polyline points="8 6 2 12 8 18" />*/}
+          {/*      </svg>*/}
+          {/*    </div>*/}
+          {/*    <h2*/}
+          {/*      id="skills-heading"*/}
+          {/*      className="text-2xl sm:text-3xl font-bold tracking-tight text-white"*/}
+          {/*    >*/}
+          {/*      Skills*/}
+          {/*    </h2>*/}
+          {/*  </div>*/}
 
-            {/* Skill tags */}
-            <div className="flex flex-wrap gap-3">
-              {skills.map((skill) => (
-                <span
-                  key={skill}
-                  className="px-5 py-2 rounded-full bg-[#220d44] border border-[#3f1c6d] text-sm font-medium text-purple-100 hover:border-[#ff3d94] hover:text-white hover:bg-[#2b1254] transition-all duration-200 cursor-default"
-                >
-                  {skill}
-                </span>
-              ))}
-            </div>
-          </section>
+          {/*  /!* Skill tags *!/*/}
+          {/*  <div className="flex flex-wrap gap-3">*/}
+          {/*    {skills.map((skill) => (*/}
+          {/*      <span*/}
+          {/*        key={skill}*/}
+          {/*        className="px-5 py-2 rounded-full bg-[#220d44] border border-[#3f1c6d] text-sm font-medium text-purple-100 hover:border-[#ff3d94] hover:text-white hover:bg-[#2b1254] transition-all duration-200 cursor-default"*/}
+          {/*      >*/}
+          {/*        {skill}*/}
+          {/*      </span>*/}
+          {/*    ))}*/}
+          {/*  </div>*/}
+          {/*</section>*/}
+          <SkillsSection skills={skills} />
 
           {/* Section: Projects */}
           <section id="Projects" aria-labelledby="projects-heading">
