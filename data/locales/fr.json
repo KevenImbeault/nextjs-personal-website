@@ -1,4 +1,40 @@
 {
+  "experiences": {
+    "exp-1": {
+      "description": {
+        "0": "Développement de nouvelles fonctionnalités pour l’environnement Atlassian (Jira, Insight, Confluence)",
+        "1": "Correction de bugs trouvés par les utilisateurs",
+        "2": "Analyse d’applications pour la mise en place de RTO/RPO",
+        "3": "Création et gestion de billets via Jira Service management",
+        "4": "Création de documentation pour le support d’applications dans une base de connaissance Confluence"
+      },
+      "period": "Février 2025 - Aujourd'hui",
+      "role": "Analyste en informatique"
+    },
+    "exp-2": {
+      "description": {
+        "0": "Développement de nouvelles fonctionnalités pour l'espace client et les outils internes",
+        "1": "Correction de bugs trouvés par les utilisateurs",
+        "2": "Gestion de base de données",
+        "3": "Gestion et Intégration d'un nouveau membre d'équipe",
+        "4": "Contrôle de version de code avec Git & Gitlab"
+      },
+      "period": "Avril 2023 - Janvier 2025",
+      "role": "Développeur Web"
+    },
+    "exp-3": {
+      "description": {
+        "0": "Aide à l'installation d'équipements client (vérification de vitesse, de signal d'antenne et interférences locales)",
+        "1": "Gestion et Création de serveurs courriels (IMAP, SMTP, MX)",
+        "2": "Mise en place et gestion de serveurs Linux (Ubuntu / Proxmox)",
+        "3": "Mise en place et gestion de conteneurs Linux sur Proxmox (Web, Courriel, Base de données)",
+        "4": "Gestion et résolution de tickets de Niveau 2 en lien avec les équipements chez les clients, l'infrastructure ou les services hébergés à l'interne",
+        "5": "Création de carte avec QGIS"
+      },
+      "period": "Janvier 2021 - Avril 2023",
+      "role": "Technicien de support - Niveau 2"
+    }
+  },
   "personal": {
     "bio": {
       "0": "Je suis un analyste informatique et développeur back-end basé au Saguenay-Lac-Saint-Jean, QC",

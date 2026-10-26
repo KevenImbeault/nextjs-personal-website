@@ -1,4 +1,40 @@
 {
+  "experiences": {
+    "exp-1": {
+      "description": {
+        "0": "Develop new features for an Atlassian Environment (Jira, Insight, Confluence)",
+        "1": "Fix bugs found by users",
+        "2": "Analyse applications to put in place RTO/RPO",
+        "3": "Create and manage tickets via Jira Service management",
+        "4": "Create documentation for supporting applications inside Confluence knowledge base"
+      },
+      "period": "February 2025 - Present",
+      "role": "Computer Analyst"
+    },
+    "exp-2": {
+      "description": {
+        "0": "Develop new features for client spaces and internal tools",
+        "1": "Fix bugs found by users",
+        "2": "Managing databases",
+        "3": "Manage and help integrate a new team member",
+        "4": "Version control using Git and GitLab"
+      },
+      "period": "April 2023 - January 2025",
+      "role": "Web Developer"
+    },
+    "exp-3": {
+      "description": {
+        "0": "Assist in client device installation (Validate speeds, antenna signal and local interference)",
+        "1": "Setting up and managing mail servers (IMAP, SMTP, MX)",
+        "2": "Setting up and managing Linux servers (Ubuntu/ Proxmox)",
+        "3": "Setting up and managing Linux containers on Proxmox hypervisor (Web/Mail/DB)",
+        "4": "Manage and resolve level 2 support tickets linked to equipement at client premises or related to infrastructure and internally hosted services",
+        "5": "Create maps using QGIS"
+      },
+      "period": "January 2021 - April 2023",
+      "role": "Support Technician - Level 2"
+    }
+  },
   "personal": {
     "bio": {
       "0": "I'm a computer analyst and back-end developer based off Saguenay-Lac-Saint-Jean, QC.",
