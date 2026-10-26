@@ -1,11 +1,34 @@
 @import "tailwindcss";
-
 :root {
   --color-1: #ff3d94;
   --color-2: #b5307e;
   --color-3: #6a2a98;
   --color-4: #3f1c6d;
   --color-5: #1f0b4b;
+}
+
+.prog {
+  border-color: #FF78B4;
+}
+
+.test {
+  border-color: #FF4FAD;
+}
+
+.network {
+  border-color: #D65BFF;
+}
+
+.web {
+  border-color: #A78BFA;
+}
+
+.deploy {
+  border-color: #57D9E8;
+}
+
+.prod {
+  border-color: #65E6B7;
 }
 
 /* CSS Palette Classes */
@@ -82,3 +105,4 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #6a2a98;
 }
+

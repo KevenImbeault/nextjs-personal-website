@@ -21,8 +21,6 @@ export default function SkillsSection({skills}: SkillsSectionProps) {
         return skills.filter((skill) => skill.category === selectedCategory);
     }, [skills, selectedCategory]);
 
-    console.log(Object.values(skills).flat());
-
     return (
         <section id="Skills" aria-labelledby="skills-heading" className="space-y-6">
             {/* Header and Category Selector */}
@@ -89,7 +87,7 @@ export default function SkillsSection({skills}: SkillsSectionProps) {
                 {displayedSkills.map((skill) => (
                     <span
                         key={skill.id}
-                        className={skill.category.concat(" px-5 py-2 rounded-full bg-[#220d44] border border-[#3f1c6d] text-sm font-medium text-purple-100 hover:border-[#ff3d94] hover:text-white hover:bg-[#2b1254] transition-all duration-200 cursor-default")}
+                        className={skill.id.split("-")[0].concat(" px-5 py-2 rounded-full bg-[#220d44] border border-[#3f1c6d] text-sm font-medium text-purple-100 hover:border-[#ff3d94] hover:text-white hover:bg-[#2b1254] transition-all duration-200 cursor-default")}
                     >
             {skill.name}
           </span>

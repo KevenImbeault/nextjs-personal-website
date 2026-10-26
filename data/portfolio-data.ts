@@ -200,12 +200,12 @@ export const portfolioData: PortfolioData = {
       name: "Chrome DevTools",
     },
     {
-      id: "test-1",
+      id: "test-2",
       category: "Tests and performance",
       name: "PageSpeed",
     },
     {
-      id: "test-1",
+      id: "test-3",
       category: "Tests and performance",
       name: "Lighthouse",
     },
