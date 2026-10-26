@@ -46,7 +46,7 @@ export default function Home() {
               </span>
             </h1>
             <p className="text-xs sm:text-sm font-semibold tracking-[0.25em] text-pink-200/90 uppercase pt-2">
-              {t("role")}
+              {t("personal.role")}
             </p>
           </div>
 
