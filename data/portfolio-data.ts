@@ -1,3 +1,5 @@
+import {faGithub} from "@fortawesome/free-brands-svg-icons";
+
 export interface SkillItem {
   id: string;
   category: string;
@@ -23,7 +25,7 @@ export interface EducationItem {
 export interface SocialLink {
   name: string;
   url: string;
-  icon: "github" | "linkedin" | "email";
+  icon: string;
 }
 
 export interface PortfolioData {
@@ -54,18 +56,23 @@ export const portfolioData: PortfolioData = {
   socialLinks: [
     {
       name: "GitHub",
-      url: "https://github.com",
-      icon: "github",
+      url: "https://github.com/KevenImbeault",
+      icon: "faGithub",
     },
     {
       name: "LinkedIn",
-      url: "https://linkedin.com",
-      icon: "linkedin",
+      url: "https://www.linkedin.com/in/kevenimbeault/",
+      icon: "faLinkedin",
     },
     {
-      name: "Email",
-      url: "mailto:contact@example.com",
-      icon: "email",
+      name: "HackerRank",
+      url: "https://www.hackerrank.com/KevenImbeault",
+      icon: "faHackerrank",
+    },
+    {
+      name: "LeetCode",
+      url: "https://leetcode.com/u/KevenImbeault/",
+      icon: "faLeetcode",
     },
   ],
   experiences: [
