@@ -235,88 +235,52 @@ export default function Home() {
             </div>
           </section>
 
-          {/*/!* Section: Skills *!/*/}
-          {/*<section id="Skills" aria-labelledby="skills-heading">*/}
-          {/*  <div className="flex items-center gap-4 mb-8">*/}
-          {/*    <div className="w-11 h-11 rounded-xl bg-[#26104f] border border-[#ff3d94]/40 flex items-center justify-center text-[#ff3d94] shadow-sm flex-shrink-0">*/}
-          {/*      <svg*/}
-          {/*        className="w-5 h-5 stroke-current fill-none"*/}
-          {/*        viewBox="0 0 24 24"*/}
-          {/*        strokeWidth="2"*/}
-          {/*        strokeLinecap="round"*/}
-          {/*        strokeLinejoin="round"*/}
-          {/*        aria-hidden="true"*/}
-          {/*      >*/}
-          {/*        <polyline points="16 18 22 12 16 6" />*/}
-          {/*        <polyline points="8 6 2 12 8 18" />*/}
-          {/*      </svg>*/}
-          {/*    </div>*/}
-          {/*    <h2*/}
-          {/*      id="skills-heading"*/}
-          {/*      className="text-2xl sm:text-3xl font-bold tracking-tight text-white"*/}
-          {/*    >*/}
-          {/*      Skills*/}
-          {/*    </h2>*/}
-          {/*  </div>*/}
-
-          {/*  /!* Skill tags *!/*/}
-          {/*  <div className="flex flex-wrap gap-3">*/}
-          {/*    {skills.map((skill) => (*/}
-          {/*      <span*/}
-          {/*        key={skill}*/}
-          {/*        className="px-5 py-2 rounded-full bg-[#220d44] border border-[#3f1c6d] text-sm font-medium text-purple-100 hover:border-[#ff3d94] hover:text-white hover:bg-[#2b1254] transition-all duration-200 cursor-default"*/}
-          {/*      >*/}
-          {/*        {skill}*/}
-          {/*      </span>*/}
-          {/*    ))}*/}
-          {/*  </div>*/}
-          {/*</section>*/}
           <SkillsSection skills={skills} />
 
           {/* Section: Projects */}
-          <section id="Projects" aria-labelledby="projects-heading">
-            <div className="flex items-center justify-between group cursor-pointer pt-2">
-              <div className="flex items-center gap-4">
-                <div className="w-11 h-11 rounded-xl bg-[#26104f] border border-[#ff3d94]/40 flex items-center justify-center text-[#ff3d94] shadow-sm flex-shrink-0 group-hover:border-[#ff3d94] transition-colors">
-                  <svg
-                    className="w-5 h-5 stroke-current fill-none"
-                    viewBox="0 0 24 24"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    aria-hidden="true"
-                  >
-                    <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
-                    <path d="M14 2v4a2 2 0 0 0 2 2h4" />
-                    <path d="M10 9H8" />
-                    <path d="M16 13H8" />
-                    <path d="M16 17H8" />
-                  </svg>
-                </div>
-                <h2
-                  id="projects-heading"
-                  className="text-2xl sm:text-3xl font-bold tracking-tight text-white group-hover:text-purple-100 transition-colors"
-                >
-                  Projects - Coming Soon
-                </h2>
-              </div>
+          {/*<section id="Projects" aria-labelledby="projects-heading">*/}
+          {/*  <div className="flex items-center justify-between group cursor-pointer pt-2">*/}
+          {/*    <div className="flex items-center gap-4">*/}
+          {/*      <div className="w-11 h-11 rounded-xl bg-[#26104f] border border-[#ff3d94]/40 flex items-center justify-center text-[#ff3d94] shadow-sm flex-shrink-0 group-hover:border-[#ff3d94] transition-colors">*/}
+          {/*        <svg*/}
+          {/*          className="w-5 h-5 stroke-current fill-none"*/}
+          {/*          viewBox="0 0 24 24"*/}
+          {/*          strokeWidth="2"*/}
+          {/*          strokeLinecap="round"*/}
+          {/*          strokeLinejoin="round"*/}
+          {/*          aria-hidden="true"*/}
+          {/*        >*/}
+          {/*          <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />*/}
+          {/*          <path d="M14 2v4a2 2 0 0 0 2 2h4" />*/}
+          {/*          <path d="M10 9H8" />*/}
+          {/*          <path d="M16 13H8" />*/}
+          {/*          <path d="M16 17H8" />*/}
+          {/*        </svg>*/}
+          {/*      </div>*/}
+          {/*      <h2*/}
+          {/*        id="projects-heading"*/}
+          {/*        className="text-2xl sm:text-3xl font-bold tracking-tight text-white group-hover:text-purple-100 transition-colors"*/}
+          {/*      >*/}
+          {/*        Projects - Coming Soon*/}
+          {/*      </h2>*/}
+          {/*    </div>*/}
 
-              {/* Right Arrow */}
-              {/*<div className="text-[#ff3d94] p-2 group-hover:translate-x-1.5 transition-transform duration-200">*/}
-              {/*  <svg*/}
-              {/*    className="w-6 h-6 stroke-current fill-none"*/}
-              {/*    viewBox="0 0 24 24"*/}
-              {/*    strokeWidth="2"*/}
-              {/*    strokeLinecap="round"*/}
-              {/*    strokeLinejoin="round"*/}
-              {/*    aria-hidden="true"*/}
-              {/*  >*/}
-              {/*    <line x1="5" y1="12" x2="19" y2="12" />*/}
-              {/*    <polyline points="12 5 19 12 12 19" />*/}
-              {/*  </svg>*/}
-              {/*</div>*/}
-            </div>
-          </section>
+          {/*    /!* Right Arrow *!/*/}
+          {/*    /!*<div className="text-[#ff3d94] p-2 group-hover:translate-x-1.5 transition-transform duration-200">*!/*/}
+          {/*    /!*  <svg*!/*/}
+          {/*    /!*    className="w-6 h-6 stroke-current fill-none"*!/*/}
+          {/*    /!*    viewBox="0 0 24 24"*!/*/}
+          {/*    /!*    strokeWidth="2"*!/*/}
+          {/*    /!*    strokeLinecap="round"*!/*/}
+          {/*    /!*    strokeLinejoin="round"*!/*/}
+          {/*    /!*    aria-hidden="true"*!/*/}
+          {/*    /!*  >*!/*/}
+          {/*    /!*    <line x1="5" y1="12" x2="19" y2="12" />*!/*/}
+          {/*    /!*    <polyline points="12 5 19 12 12 19" />*!/*/}
+          {/*    /!*  </svg>*!/*/}
+          {/*    /!*</div>*!/*/}
+          {/*  </div>*/}
+          {/*</section>*/}
         </div>
       </main>
     </div>
