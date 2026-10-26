@@ -1,4 +1,25 @@
 {
+  "education": {
+    "edu-1": {
+      "degree": "Computer Science Bachelor Degree",
+      "description": {
+        "0": "UnitedCTF 2023 - 3rd place for UQAC-only ranking",
+        "1": "UnitedCTF 2024 - 51st global ranking, unknown for UQAC-only ranking"
+      },
+      "period": "August 2023 - December 2024"
+    },
+    "edu-2": {
+      "degree": "Electrical Engineering Bachelor Degree",
+      "description": {
+        "0": "Did not finish, transferred to Computer science"
+      },
+      "period": "August 2022 - June 2023"
+    },
+    "edu-3": {
+      "degree": "Computer Science Diploma",
+      "period": "2019 - June 2022"
+    }
+  },
   "experiences": {
     "exp-1": {
       "description": {

@@ -144,7 +144,6 @@ export const portfolioData: PortfolioData = {
       degree: "Computer Science Diploma",
       school: "Collège d'Alma",
       description:[
-        "",
       ]
 
     },

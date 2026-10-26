@@ -1,4 +1,25 @@
 {
+  "education": {
+    "edu-1": {
+      "degree": "Baccalauréat en information",
+      "description": {
+        "0": "UnitedCTF 2023 - 3e place dans le classement pour l'UQAC uniquement",
+        "1": "UnitedCTF 2024 - 51e global, rang inconnue pour le classement à l'intérieur de l'UQAC"
+      },
+      "period": "Août 2023 - Décembre 2024"
+    },
+    "edu-2": {
+      "degree": "Baccalauréat en génie électrique",
+      "description": {
+        "0": "Did not finish, transferred to Computer science"
+      },
+      "period": "Août 2022 - Juin 2023"
+    },
+    "edu-3": {
+      "degree": "Diplome d'étude collégial en Techniques de l'informatique",
+      "period": "2019 - Juin 2022"
+    }
+  },
   "experiences": {
     "exp-1": {
       "description": {

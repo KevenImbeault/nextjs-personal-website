@@ -219,19 +219,21 @@ export default function Home() {
 
                   <div className="space-y-1.5">
                     <span className="text-xs sm:text-sm font-medium text-purple-300/80 tracking-wide">
-                      {edu.period}
+                      {t("education." + edu.id + ".period")}
                     </span>
                     <h3 className="text-lg sm:text-xl font-bold text-white tracking-tight">
-                      {edu.degree}
+                      {t("education." + edu.id + ".degree")}
                     </h3>
                     <p className="text-sm font-semibold text-[#ff3d94]">
                       {edu.school}
                     </p>
-                    {edu.description.map((desc, index) => (
-                        <p key={index} className="text-sm text-purple-200/80 leading-relaxed pt-1 max-w-2xl">
-                          {desc}
-                        </p>
-                    ))}
+                    <p className="text-sm text-purple-200/80 leading-relaxed pt-1 max-w-2xl">
+                      <ul style={{ listStyleType: "disc", paddingLeft: "20px"}}>
+                        {edu.description.map((str, index) => (
+                            <li key={index}>{t("education." + edu.id + ".description." + index)}</li>
+                        ))}
+                      </ul>
+                    </p>
 
                   </div>
                 </div>
