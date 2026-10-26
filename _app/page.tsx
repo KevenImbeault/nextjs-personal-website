@@ -53,7 +53,7 @@ export default function Home() {
           {/* Bio */}
           {personal.bio.map((biopart, index) => (
             <p key={index} className="text-purple-100/85 text-sm sm:text-base leading-relaxed max-w-sm">
-              {biopart}
+              {t("personal.bio." + index)}
             </p>
           ))}
 
