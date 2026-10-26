@@ -1,7 +1,7 @@
 import { portfolioData } from "@/data/portfolio-data";
 import Link from "next/link";
 import NavLink from "@/components/NavLink";
-import SkillsSection from "@/data/SkillsSection";
+import SkillsSection from "@/components/SkillsSection";
 
 export default function Home() {
   const { personal, socialLinks, experiences, education, skills } =
