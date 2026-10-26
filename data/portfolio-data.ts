@@ -1,3 +1,9 @@
+export interface SkillItem {
+  id: string;
+  category: string;
+  name: string;
+}
+
 export interface ExperienceItem {
   id: string;
   role: string;
@@ -31,7 +37,7 @@ export interface PortfolioData {
   socialLinks: SocialLink[];
   experiences: ExperienceItem[];
   education: EducationItem[];
-  skills: Record<string, string[]>; // Categorized skills dictionary
+  skills: SkillItem[]; // Categorized skills dictionary
 }
 
 export const portfolioData: PortfolioData = {
@@ -138,24 +144,140 @@ export const portfolioData: PortfolioData = {
 
     },
   ],
-  skills: {
-    "Programming": [
-      "TypeScript",
-      "JavaScript",
-      "Node.js",
-      "Express",
-      "PostgreSQL",
-    ],
-    "Deployment": [
-      "Docker",
-      "Linux",
-      "AWS",
-      "Git",
-    ],
-    "Tools & Systems": [
-      "Atlassian (Jira/Confluence)",
-      "Proxmox",
-      "QGIS",
-    ],
-  },
+  skills: [
+    {
+      id: "prog-1",
+      category: "Programming",
+      name: "C++",
+    }, {
+      id: "prog-2",
+      category: "Programming",
+      name: "C#",
+    },
+    {
+      id: "prog-3",
+      category: "Programming",
+      name: "Markdown",
+    },
+    {
+      id: "prog-4",
+      category: "Programming",
+      name: "Javascript",
+    },
+    {
+      id: "prog-5",
+      category: "Programming",
+      name: "HTML",
+    },
+    {
+      id: "prog-6",
+      category: "Programming",
+      name: "CSS",
+    },
+    {
+      id: "prog-7",
+      category: "Programming",
+      name: "SQL",
+    },
+    {
+      id: "prog-8",
+      category: "Programming",
+      name: "Python",
+    },
+    {
+      id: "prog-9",
+      category: "Programming",
+      name: "PHP",
+    },
+    {
+      id: "prog-10",
+      category: "Programming",
+      name: "TypeScript",
+    },
+    {
+      id: "test-1",
+      category: "Tests and performance",
+      name: "Chrome DevTools",
+    },
+    {
+      id: "test-1",
+      category: "Tests and performance",
+      name: "PageSpeed",
+    },
+    {
+      id: "test-1",
+      category: "Tests and performance",
+      name: "Lighthouse",
+    },
+    {
+      id: "network-1",
+      category: "Computer Networking",
+      name: "OSPF/BGP",
+    },
+    {
+      id: "network-2",
+      category: "Computer Networking",
+      name: "Routes",
+    },
+    {
+      id: "network-3",
+      category: "Computer Networking",
+      name: "Firewall",
+    },
+    {
+      id: "network-4",
+      category: "Computer Networking",
+      name: "Wireless antenna connectivity"
+    },
+    {
+      id: "web-1",
+      category: "Web Technologies",
+      name: "Bootstrap",
+    },
+    {
+      id: "web-2",
+      category: "Web Technologies",
+      name: "jQuery",
+    },
+    {
+      id: "web-3",
+      category: "Web Technologies",
+      name: "NodeJS",
+    },
+    {
+      id: "web-4",
+      category: "Web Technologies",
+      name: "Flask",
+    },
+    {
+      id: "deploy-1",
+      category: "Deployment",
+      name: "Git",
+    },
+    {
+      id: "deploy-2",
+      category: "Deployment",
+      name: "Github",
+    },
+    {
+      id: "deploy-3",
+      category: "Deployment",
+      name: "Github Pages",
+    },
+    {
+      id: "deploy-4",
+      category: "Deployment",
+      name: "Digital Ocean",
+    },
+    {
+      id: "prod-1",
+      category: "Productivity",
+      name: "Jira Service Management",
+    },
+    {
+      id: "prod-2",
+      category: "Productivity",
+      name: "Confluence",
+    },
+  ],
 };
