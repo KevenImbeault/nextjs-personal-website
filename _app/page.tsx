@@ -105,11 +105,11 @@ export default function Home() {
       <main className="relative z-10 flex-1 px-8 py-10 sm:px-12 sm:py-14 lg:px-20 lg:py-16 max-w-5xl">
         {/* Top bar / Resume */}
         <div className="flex items-center justify-end mb-10 sm:mb-14">
-          <NavLink href={"#Work"}>Work</NavLink>
-          <NavLink href={"#Education"}>Education</NavLink>
-          <NavLink href={"#Skills"}>Skills</NavLink>
-          <NavLink href={"#Projects"}>Projects</NavLink>
-          <NavLink href={personal.resumeUrl} isExternal>Resume</NavLink>
+          <NavLink href={"#Work"}>{t("menu.work")}</NavLink>
+          <NavLink href={"#Education"}>{t("menu.education")}</NavLink>
+          <NavLink href={"#Skills"}>{t("menu.skills")}</NavLink>
+          <NavLink href={"#Projects"}>{t("menu.projects")}</NavLink>
+          <NavLink href={personal.resumeUrl} isExternal>{t("menu.resume")}</NavLink>
           <LanguageSwitcher />
         </div>
 
@@ -134,7 +134,7 @@ export default function Home() {
                 id="experience-heading"
                 className="text-2xl sm:text-3xl font-bold tracking-tight text-white"
               >
-                Work Experience
+                {t("sections.section-1.title")}
               </h2>
             </div>
 
@@ -197,7 +197,7 @@ export default function Home() {
                 id="education-heading"
                 className="text-2xl sm:text-3xl font-bold tracking-tight text-white"
               >
-                Education
+                {t("sections.section-2.title")}
               </h2>
             </div>
 

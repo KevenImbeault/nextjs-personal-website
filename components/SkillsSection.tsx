@@ -2,6 +2,7 @@
 
 import {useState, useMemo} from "react";
 import {SkillItem} from "@/data/portfolio-data";
+import {useTranslations} from "next-globe-gen";
 
 interface SkillsSectionProps {
     skills: SkillItem[];
@@ -20,6 +21,8 @@ export default function SkillsSection({skills}: SkillsSectionProps) {
         }
         return skills.filter((skill) => skill.category === selectedCategory);
     }, [skills, selectedCategory]);
+
+    const t = useTranslations("sections");
 
     return (
         <section id="Skills" aria-labelledby="skills-heading" className="space-y-6">
@@ -44,7 +47,7 @@ export default function SkillsSection({skills}: SkillsSectionProps) {
                         id="skills-heading"
                         className="text-2xl sm:text-3xl font-bold tracking-tight text-white"
                     >
-                        Skills
+                        {t("section-3.title")}
                     </h2>
                 </div>
 

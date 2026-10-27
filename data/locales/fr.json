@@ -56,11 +56,29 @@
       "role": "Technicien de support - Niveau 2"
     }
   },
+  "menu": {
+    "education": "Éducation",
+    "projects": "Projets",
+    "resume": "C.V.",
+    "skills": "Compétences",
+    "work": "Expérience"
+  },
   "personal": {
     "bio": {
       "0": "Je suis un analyste informatique et développeur back-end basé au Saguenay-Lac-Saint-Jean, QC",
       "1": "Toujours en train d'apprendre sur l'IA, la programmation, les réseaux informatique et la cybersécurité."
     },
     "role": "ANALYSTE EN INFORMATIQUE"
+  },
+  "sections": {
+    "section-1": {
+      "title": "Expérience"
+    },
+    "section-2": {
+      "title": "Éducation"
+    },
+    "section-3": {
+      "title": "Compétences"
+    }
   }
 }
