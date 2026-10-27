@@ -80,5 +80,14 @@
     "section-3": {
       "title": "Compétences"
     }
+  },
+  "skills-categories": {
+    "all": "Toutes les catégories",
+    "deploy": "Déploiement",
+    "network": "Réseaux informatiques",
+    "prod": "Productivité",
+    "prog": "Programmation",
+    "test": "Tests",
+    "web": "Technologie web"
   }
 }

@@ -12,17 +12,17 @@ export default function SkillsSection({skills}: SkillsSectionProps) {
     const [selectedCategory, setSelectedCategory] = useState<string>("All");
 
     const categories = useMemo(() => {
-        return ["All", ...new Set(skills.map((skill) => skill.category))];
+        return ["All", ...new Set(skills.map((skill) => skill.id.split("-")[0]))];
     }, [skills]);
 
     const displayedSkills = useMemo(() => {
         if (selectedCategory === "All") {
             return Object.values(skills).flat();
         }
-        return skills.filter((skill) => skill.category === selectedCategory);
+        return skills.filter((skill) => skill.id.split("-")[0] === selectedCategory);
     }, [skills, selectedCategory]);
 
-    const t = useTranslations("sections");
+    const t = useTranslations();
 
     return (
         <section id="Skills" aria-labelledby="skills-heading" className="space-y-6">
@@ -47,7 +47,7 @@ export default function SkillsSection({skills}: SkillsSectionProps) {
                         id="skills-heading"
                         className="text-2xl sm:text-3xl font-bold tracking-tight text-white"
                     >
-                        {t("section-3.title")}
+                        {t("sections.section-3.title")}
                     </h2>
                 </div>
 
@@ -64,7 +64,7 @@ export default function SkillsSection({skills}: SkillsSectionProps) {
                     >
                         {categories.map((category) => (
                             <option key={category} value={category} className="bg-[#100624] text-white">
-                                {category === "All" ? "All Categories" : category}
+                                {category === "All" ? t("skills-categories.all") : t("skills-categories." + category)}
                             </option>
                         ))}
                     </select>
