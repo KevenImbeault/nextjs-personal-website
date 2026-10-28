@@ -64,7 +64,7 @@ export default function SkillsSection({skills}: SkillsSectionProps) {
                     >
                         {categories.map((category) => (
                             <option key={category} value={category} className="bg-[#100624] text-white">
-                                {category === "All" ? t("skills-categories.all") : t("skills-categories." + category)}
+                                {category === "All" ? t("skills-categories.all") : t(`skills-categories.${category}` as Parameters<typeof t>[0])}
                             </option>
                         ))}
                     </select>

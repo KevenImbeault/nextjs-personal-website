@@ -54,7 +54,7 @@ export default function Home() {
           {/* Bio */}
           {personal.bio.map((biopart, index) => (
             <p key={index} className="text-purple-100/85 text-sm sm:text-base leading-relaxed max-w-sm">
-              {t("personal.bio." + index)}
+              {t(`personal.bio.${index}` as Parameters<typeof t>[0])}
             </p>
           ))}
 
@@ -157,10 +157,10 @@ export default function Home() {
 
                   <div className="space-y-1.5">
                     <span className="text-xs sm:text-sm font-medium text-purple-300/80 tracking-wide">
-                      {t("experiences." + exp.id + ".period")}
+                      {t(`experiences.${exp.id}.period` as Parameters<typeof t>[0])}
                     </span>
                     <h3 className="text-lg sm:text-xl font-bold text-white tracking-tight">
-                      {t("experiences." + exp.id + ".role")}
+                      {t(`experiences.${exp.id}.role` as Parameters<typeof t>[0])}
                     </h3>
                     <p className="text-sm font-semibold text-[#ff3d94]">
                       {exp.company}
@@ -168,7 +168,7 @@ export default function Home() {
                     <p className="text-sm text-purple-200/80 leading-relaxed pt-1 max-w-2xl">
                       <ul style={{ listStyleType: "disc", paddingLeft: "20px"}}>
                       {exp.description.map((str, index) => (
-                        <li key={index}>{t("experiences." + exp.id + ".description." + index)}</li>
+                        <li key={index}>{t(`experiences.${exp.id}.description.${index}` as Parameters<typeof t>[0])}</li>
                       ))}
                       </ul>
                     </p>
@@ -220,10 +220,10 @@ export default function Home() {
 
                   <div className="space-y-1.5">
                     <span className="text-xs sm:text-sm font-medium text-purple-300/80 tracking-wide">
-                      {t("education." + edu.id + ".period")}
+                      {t(`education.${edu.id}.period` as Parameters<typeof t>[0])}
                     </span>
                     <h3 className="text-lg sm:text-xl font-bold text-white tracking-tight">
-                      {t("education." + edu.id + ".degree")}
+                      {t(`education.${edu.id}.degree` as Parameters<typeof t>[0])}
                     </h3>
                     <p className="text-sm font-semibold text-[#ff3d94]">
                       {edu.school}
@@ -231,7 +231,7 @@ export default function Home() {
                     <p className="text-sm text-purple-200/80 leading-relaxed pt-1 max-w-2xl">
                       <ul style={{ listStyleType: "disc", paddingLeft: "20px"}}>
                         {edu.description.map((str, index) => (
-                            <li key={index}>{t("education." + edu.id + ".description." + index)}</li>
+                            <li key={index}>{t(`education.${edu.id}.description.${index}` as Parameters<typeof t>[0])}</li>
                         ))}
                       </ul>
                     </p>

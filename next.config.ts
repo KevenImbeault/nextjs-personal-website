@@ -4,6 +4,8 @@ import createNextGlobeGenPlugin from "next-globe-gen/plugin";
 const withNextGlobeGen = createNextGlobeGenPlugin();
 
 const nextConfig: NextConfig = {
+  output: "standalone",
+  reactStrictMode: true,
   /* config options here */
   cacheComponents: true,
   partialPrefetching: true,
