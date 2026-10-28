@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 
 import {faGithub, faHackerrank, faLeetcode, faLinkedin} from "@fortawesome/free-brands-svg-icons";
-import {useTranslations} from "next-globe-gen";
+import {useLocale, useTranslations} from "next-globe-gen";
 
 library.add(faGithub, faHackerrank, faLeetcode, faLinkedin)
 
@@ -15,6 +15,7 @@ export default function Home() {
     portfolioData;
 
   const t = useTranslations();
+  const locale = useLocale();
 
   return (
     <div className="min-h-screen w-full bg-[#100624] text-white relative overflow-hidden flex flex-col lg:flex-row">
@@ -109,7 +110,7 @@ export default function Home() {
           <NavLink href={"#Education"}>{t("menu.education")}</NavLink>
           <NavLink href={"#Skills"}>{t("menu.skills")}</NavLink>
           <NavLink href={"#Projects"}>{t("menu.projects")}</NavLink>
-          <NavLink href={personal.resumeUrl} isExternal>{t("menu.resume")}</NavLink>
+          <NavLink href={"Keven_Imbeault_" + locale +"_CV.pdf"} isExternal>{t("menu.resume")}</NavLink>
           <LanguageSwitcher />
         </div>
 

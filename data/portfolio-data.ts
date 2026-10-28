@@ -49,7 +49,7 @@ export const portfolioData: PortfolioData = {
       "I'm a computer analyst and back-end developer based off Saguenay-Lac-Saint-Jean, QC.",
       " Always learning about AI, programming, computer networks, and cybersecurity."
     ],
-    resumeUrl: "#resume",
+    resumeUrl: "/public/resume.pdf",
   },
   socialLinks: [
     {
