@@ -21,7 +21,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Keven Imbeault | Back-End Developer",
   description:
-    "I build reliable and scalable backend systems with a focus on clean code, performance and great developer experience.",
+    "Je suis un analyste informatique et développeur back-end basé au Saguenay-Lac-Saint-Jean, QC\n" +
+      "\n" +
+      "Toujours en train d'apprendre sur l'IA, la programmation, les réseaux informatique et la cybersécurité.",
 };
 
 export default function RootLayout({
