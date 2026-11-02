@@ -1,36 +1,120 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Personal Portfolio Website
 
-## Getting Started
+A modern, responsive, and bilingual personal portfolio and resume website built with **Next.js (App Router)**, **React 19**, **Tailwind CSS v4**, and **next-globe-gen** for internationalization (i18n).
 
-First, run the development server:
+---
+
+## ✨ Features
+
+- **🌐 Bilingual Support (i18n)**: Full English and French localization powered by `next-globe-gen` with dedicated routing and localized CV downloads.
+- **🎨 Modern Dark UI**: Ambient glow effect, clean typography using Vercel's Geist font family, and responsive layout across mobile, tablet, and desktop screens.
+- **💼 Work Experience & Education**: Detailed career milestones, role achievements, and academic background.
+- **🛠️ Interactive Skills Filter**: Categorized skill tags filterable by category (Programming, Web Technology, Deployment, Networking, Testing, Productivity).
+- **🔗 Social & Resume Links**: Direct access to GitHub, LinkedIn, HackerRank, LeetCode profiles, and downloadable PDF resumes in English and French.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js](https://nextjs.org/) (App Router, Turbopack, Standalone Output)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **UI & Styling**: [React 19](https://react.dev/), [Tailwind CSS v4](https://tailwindcss.com/)
+- **Icons**: [FontAwesome](https://fontawesome.com/) (`@fortawesome/react-fontawesome`)
+- **Internationalization**: [`next-globe-gen`](https://github.com/KevenImbeault/next-globe-gen)
+- **Linting & Code Quality**: [ESLint](https://eslint.org/)
+
+---
+
+## 📁 Project Structure
+
+```text
+nextjs-personal-website/
+├── _app/                     # Source routes before localization generation
+│   ├── layout.tsx            # Root HTML layout, metadata, font configuration
+│   ├── page.tsx              # Main portfolio single-page application
+│   └── LanguageSwitcher.tsx  # Locale selector component
+├── app/                      # Next.js app directory (generated i18n routes & global styles)
+│   ├── globals.css           # Global stylesheet & Tailwind directives
+│   └── favicon.ico
+├── components/               # Reusable UI components
+│   ├── NavLink.tsx           # Navigation link component
+│   └── SkillsSection.tsx     # Interactive skills list with category dropdown
+├── data/                     # Application content & translations
+│   ├── locales/
+│   │   ├── en.json           # English localization strings
+│   │   └── fr.json           # French localization strings
+│   └── portfolio-data.ts     # Core portfolio structured data (experiences, education, skills, socials)
+├── public/                   # Static assets & PDF resumes
+│   ├── Keven_Imbeault_en_CV.pdf
+│   └── Keven_Imbeault_fr_CV.pdf
+├── i18n.config.ts            # Internationalization configuration
+├── next.config.ts            # Next.js configuration (standalone output, turbopack, plugins)
+└── package.json              # Project scripts and dependencies
+```
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Ensure you have **Node.js 18.17+** (or Node.js 20+) installed on your machine.
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/KevenImbeault/nextjs-personal-website.git
+   cd nextjs-personal-website
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+### Development
+
+Run the development server with Turbopack:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `_app/page.tsx`. The page auto-updates as you edit the file.
+### Building for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Build the optimized standalone production bundle:
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+Start the production server:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Linting
 
-## Deploy on Vercel
+Run ESLint to check for code issues:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm run lint
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## ⚙️ Customization
+
+- **Profile & Content**: Update `data/portfolio-data.ts` to modify personal details, experiences, education entries, skills, and social links.
+- **Translations**: Update `data/locales/en.json` and `data/locales/fr.json` for UI labels and bilingual descriptions.
+- **Resumes / CVs**: Place updated resume PDFs in the `public/` directory and ensure the filenames match those referenced in `_app/page.tsx` and `data/portfolio-data.ts`.
+
+---
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
